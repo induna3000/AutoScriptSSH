@@ -1,10 +1,18 @@
 #!/bin/bash
 apt install jq curl -y
+
+####################CHANGE
 DOMAIN=jinchynar.ml
+####################ME
+
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
+
+####################CHANGE
 SUB_DOMAIN=${sub}.jinchynar.ml
 CF_ID=myvps77@gmail.com
 CF_KEY=21c41d6ee27966b56e336d052dd8ae9062977
+####################ME
+
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
